@@ -1,10 +1,15 @@
 import re
 import joblib
 import streamlit as st
+import nltk
+
+# Download required NLTK resources
+nltk.download("stopwords", quiet=True)
+nltk.download("wordnet", quiet=True)
+nltk.download("omw-1.4", quiet=True)
+
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
-
-
 # =========================================================
 # PAGE CONFIGURATION
 # =========================================================
